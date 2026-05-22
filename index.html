@@ -1,59 +1,134 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  <title>Fitness Guide</title>
+html{
+    scroll-behavior: smooth;
+}
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+body{
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
 
-  <!-- HERO SECTION -->
+/* HERO SECTION */
 
-  <section class="hero">
+.hero{
+    position: relative;
+    height: 100vh;
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
 
-    <div class="overlay"></div>
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+}
 
-    <div class="navbar">
-      <h2>FITNESS GUIDE</h2>
+/* NAVBAR */
 
-      <ul>
-        <li>Home</li>
-        <li>Workouts</li>
-        <li>About</li>
-      </ul>
-    </div>
+.navbar{
+    position: relative;
+    z-index: 2;
 
-    <div class="hero-content">
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-      <h1>
-        TRANSFORM <br>
-        YOUR BODY
-      </h1>
+    padding: 30px 80px;
+}
 
-      <p>
-        Discover professional workout guides for every muscle group.
-      </p>
+.navbar h2{
+    font-size: 32px;
+    color: white;
+}
 
-      <a href="#body-section">
-        <button>Start Training</button>
-      </a>
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
 
-    </div>
+.navbar li{
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-  </section>
+.navbar li:hover{
+    color: red;
+}
 
-  <!-- BODY SECTION -->
+/* HERO CONTENT */
 
-  <section id="body-section">
+.hero-content{
+    position: relative;
+    z-index: 2;
 
-    <h1 class="section-title">
-      BODY GUIDE COMING NEXT
-    </h1>
+    height: 80vh;
 
-  </section>
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-</body>
-</html>
+    padding-left: 100px;
+
+    max-width: 700px;
+}
+
+.hero-content h1{
+    font-size: 90px;
+    line-height: 95px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.hero-content p{
+    font-size: 22px;
+    color: #dddddd;
+    margin-bottom: 40px;
+}
+
+.hero-content button{
+    width: 220px;
+    padding: 18px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: red;
+    color: white;
+
+    font-size: 18px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.hero-content button:hover{
+    background: white;
+    color: black;
+}
+
+/* SECOND SECTION */
+
+#body-section{
+    height: 100vh;
+    background: #111;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title{
+    font-size: 50px;
+    color: white;
+}
