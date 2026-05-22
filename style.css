@@ -4,13 +4,17 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family:Arial, sans-serif;
     background:black;
     color:white;
 }
 
-/* HERO SECTION */
+/* FIRST PAGE */
 
 .hero{
     position:relative;
@@ -22,7 +26,7 @@ body{
     background-repeat:no-repeat;
 }
 
-/* DARK OVERLAY */
+/* OVERLAY */
 
 .overlay{
     position:absolute;
@@ -48,7 +52,6 @@ body{
 .navbar h2{
     font-size:32px;
     letter-spacing:2px;
-    color:white;
 }
 
 .navbar ul{
@@ -58,7 +61,6 @@ body{
 }
 
 .navbar li{
-    color:white;
     cursor:pointer;
     transition:0.3s;
 }
@@ -89,8 +91,6 @@ body{
     line-height:95px;
 
     margin-bottom:25px;
-
-    color:white;
 }
 
 .hero-content p{
@@ -121,4 +121,21 @@ body{
 .hero-content button:hover{
     background:white;
     color:black;
+}
+
+/* SECOND PAGE */
+
+#body-page{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:black;
+}
+
+#body-page img{
+    width:100%;
+    max-width:1400px;
 }
