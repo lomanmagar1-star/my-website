@@ -4,10 +4,6 @@
     box-sizing:border-box;
 }
 
-html{
-    scroll-behavior:smooth;
-}
-
 body{
     font-family:Arial, sans-serif;
     background:black;
@@ -125,7 +121,7 @@ body{
 
 /* SECOND PAGE */
 
-#body-page{
+.body-page{
     min-height:100vh;
 
     display:flex;
@@ -135,7 +131,7 @@ body{
     background:black;
 }
 
-#body-page img{
+.body-page img{
     width:100%;
     max-width:1400px;
 }
