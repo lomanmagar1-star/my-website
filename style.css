@@ -80,13 +80,21 @@ body{
     color:white;
 
     cursor:pointer;
+
+    padding:10px 18px;
+    border-radius:8px;
+
     transition:0.3s;
 }
 
 .navbar li:hover{
-    color:red;
+    color:white;
+
+    background:red;
 
     transform:translateY(-3px);
+
+    box-shadow:0 0 20px rgba(255,0,0,0.5);
 }
 
 /* HERO CONTENT */
