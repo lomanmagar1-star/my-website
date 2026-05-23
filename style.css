@@ -5,16 +5,232 @@
 }
 
 body{
-    background:black;
     font-family:Arial, sans-serif;
-    overflow:hidden;
+    background:black;
+    color:white;
+    overflow-x:hidden;
 }
 
-/* BODY PAGE */
+/* HERO SECTION */
+
+.hero{
+    position:relative;
+
+    width:100%;
+    height:100vh;
+
+    background-image:url("firstpage.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/* DARK OVERLAY */
+
+.overlay{
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.72);
+
+    animation:fadeIn 2s ease;
+}
+
+/* NAVBAR */
+
+.navbar{
+    position:relative;
+    z-index:2;
+
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:30px 80px;
+
+    animation:slideDown 1s ease;
+}
+
+.navbar h2{
+    font-size:32px;
+    letter-spacing:2px;
+
+    color:white;
+
+    transition:0.3s;
+}
+
+.navbar h2:hover{
+    color:red;
+    transform:scale(1.05);
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+
+    gap:40px;
+}
+
+.navbar li{
+    color:white;
+
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.navbar li:hover{
+    color:red;
+
+    transform:translateY(-3px);
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+    position:absolute;
+    z-index:2;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%, -50%);
+
+    width:100%;
+    max-width:1000px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+    animation:fadeUp 1.5s ease;
+}
+
+.hero-content h1{
+    font-size:110px;
+    line-height:110px;
+
+    margin-bottom:25px;
+
+    color:white;
+
+    transition:0.4s;
+}
+
+.hero-content h1:hover{
+    transform:scale(1.02);
+
+    text-shadow:0 0 25px rgba(255,255,255,0.4);
+}
+
+.hero-content p{
+    font-size:24px;
+
+    color:#dddddd;
+
+    max-width:750px;
+
+    margin-bottom:40px;
+
+    transition:0.3s;
+}
+
+.hero-content p:hover{
+    color:white;
+}
+
+/* BUTTON */
+
+.hero-content button{
+    padding:18px 55px;
+
+    border:none;
+    border-radius:12px;
+
+    background:red;
+    color:white;
+
+    font-size:18px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    box-shadow:0 0 25px rgba(255,0,0,0.5);
+}
+
+.hero-content button:hover{
+    background:white;
+    color:black;
+
+    transform:scale(1.08);
+
+    box-shadow:0 0 35px rgba(255,255,255,0.6);
+}
+
+/* STATS */
+
+.stats{
+    margin-top:70px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+}
+
+.stat-box{
+    background:rgba(255,255,255,0.08);
+
+    padding:25px 40px;
+
+    border-radius:15px;
+
+    backdrop-filter:blur(5px);
+
+    min-width:180px;
+
+    transition:0.4s;
+}
+
+.stat-box:hover{
+    transform:translateY(-10px) scale(1.05);
+
+    background:rgba(255,0,0,0.15);
+
+    box-shadow:0 0 25px rgba(255,0,0,0.4);
+}
+
+.stat-box h3{
+    font-size:40px;
+
+    margin-bottom:10px;
+
+    color:red;
+}
+
+.stat-box span{
+    color:#cccccc;
+}
+
+/* SECOND PAGE */
 
 .body-page{
     width:100%;
-    height:100vh;
+    min-height:100vh;
 
     display:flex;
     justify-content:center;
@@ -23,19 +239,20 @@ body{
     background:black;
 }
 
-/* CONTAINER */
+/* BODY CONTAINER */
 
 .body-container{
     position:relative;
 
     width:100%;
-    max-width:1400px;
+    max-width:1600px;
 }
 
-/* IMAGE */
+/* BODY IMAGE */
 
 .body-container img{
     width:100%;
+
     display:block;
 }
 
@@ -44,100 +261,43 @@ body{
 .dot{
     position:absolute;
 
-    width:24px;
-    height:24px;
-
-    border-radius:50%;
+    width:35px;
+    height:35px;
 
     background:black;
 
     border:4px solid white;
 
+    border-radius:50%;
+
+    z-index:9999;
+
     cursor:pointer;
 
-    z-index:999;
-
     transition:0.3s;
-
-    box-shadow:0 0 12px rgba(255,255,255,0.6);
 }
 
 .dot:hover{
-    transform:scale(1.15);
+    transform:scale(1.2);
 
     background:red;
-
-    box-shadow:0 0 18px rgba(255,0,0,0.8);
 }
 
-/* LABELS */
+/* DOT POSITIONS */
 
-.dot span{
-    position:absolute;
-
-    left:35px;
-    top:-3px;
-
-    color:white;
-
-    font-size:13px;
-    font-weight:bold;
-
-    letter-spacing:1px;
-
-    white-space:nowrap;
-}
-
-/* FRONT BODY */
-
-/* CHEST */
 .chest-dot{
-    top:20%;
-    left:30%;
-}
-
-/* SHOULDERS */
-.shoulder-dot{
-    top:12%;
+    top:33%;
     left:38%;
 }
 
-/* ARMS */
 .arm-dot{
-    top:35%;
-    left:18%;
+    top:43%;
+    left:31%;
 }
 
-/* ABS */
-.abs-dot{
-    top:48%;
-    left:41%;
-}
-
-/* LEGS */
 .leg-dot{
     top:72%;
-    left:30%;
-}
-
-/* BACK BODY */
-
-/* BACK */
-.back-dot{
-    top:20%;
-    left:77%;
-}
-
-/* GLUTES */
-.glute-dot{
-    top:58%;
-    left:84%;
-}
-
-/* CALVES */
-.calf-dot{
-    top:74%;
-    left:80%;
+    left:38%;
 }
 
 /* POPUP */
@@ -151,7 +311,7 @@ body{
     width:100%;
     height:100%;
 
-    background:rgba(0,0,0,0.75);
+    background:rgba(0,0,0,0.7);
 
     display:none;
 
@@ -166,17 +326,17 @@ body{
 .popup-box{
     position:relative;
 
-    width:420px;
-
     background:#111;
 
     padding:40px;
 
     border-radius:20px;
 
+    width:400px;
+
     text-align:center;
 
-    box-shadow:0 0 40px rgba(255,0,0,0.4);
+    box-shadow:0 0 30px rgba(255,0,0,0.3);
 
     animation:fadeIn 0.3s ease;
 }
@@ -186,9 +346,9 @@ body{
 .popup-box h2{
     color:red;
 
-    font-size:38px;
-
     margin-bottom:15px;
+
+    font-size:32px;
 }
 
 /* TEXT */
@@ -197,8 +357,6 @@ body{
     color:white;
 
     font-size:18px;
-
-    line-height:28px;
 }
 
 /* CLOSE BUTTON */
@@ -209,30 +367,49 @@ body{
     top:10px;
     right:20px;
 
-    color:white;
-
-    font-size:35px;
+    font-size:32px;
 
     cursor:pointer;
 
-    transition:0.3s;
+    color:white;
 }
 
 .close-btn:hover{
     color:red;
 }
 
-/* ANIMATION */
+/* ANIMATIONS */
 
-@keyframes fadeIn{
-
+@keyframes fadeUp{
     from{
         opacity:0;
-        transform:scale(0.8);
+        transform:translate(-50%, -40%);
     }
 
     to{
         opacity:1;
-        transform:scale(1);
+        transform:translate(-50%, -50%);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes slideDown{
+    from{
+        opacity:0;
+        transform:translateY(-50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
     }
 }

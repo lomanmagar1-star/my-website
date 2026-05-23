@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <title>Body Guide</title>
 
     <link rel="stylesheet" href="style.css">
@@ -14,45 +14,15 @@
 
         <div class="body-container">
 
-            <!-- BODY IMAGE -->
-
             <img src="background.png" alt="Body Anatomy">
 
-            <!-- FRONT BODY -->
+            <!-- CLICKABLE DOTS -->
 
-            <button class="dot chest-dot" onclick="showPopup('Chest Workout')">
-                <span>CHEST</span>
-            </button>
+            <button class="dot chest-dot" onclick="showPopup()"></button>
 
-            <button class="dot shoulder-dot" onclick="showPopup('Shoulder Workout')">
-                <span>SHOULDERS</span>
-            </button>
+            <button class="dot arm-dot" onclick="showPopup()"></button>
 
-            <button class="dot arm-dot" onclick="showPopup('Arm Workout')">
-                <span>ARMS</span>
-            </button>
-
-            <button class="dot abs-dot" onclick="showPopup('Abs Workout')">
-                <span>ABS</span>
-            </button>
-
-            <button class="dot leg-dot" onclick="showPopup('Leg Workout')">
-                <span>LEGS</span>
-            </button>
-
-            <!-- BACK BODY -->
-
-            <button class="dot back-dot" onclick="showPopup('Back Workout')">
-                <span>BACK</span>
-            </button>
-
-            <button class="dot glute-dot" onclick="showPopup('Glute Workout')">
-                <span>GLUTES</span>
-            </button>
-
-            <button class="dot calf-dot" onclick="showPopup('Calf Workout')">
-                <span>CALVES</span>
-            </button>
+            <button class="dot leg-dot" onclick="showPopup()"></button>
 
         </div>
 
@@ -66,11 +36,9 @@
 
             <span class="close-btn" onclick="closePopup()">×</span>
 
-            <h2 id="popup-title">Workout</h2>
+            <h2>Exercise Guide</h2>
 
-            <p>
-                Professional workout exercises and training guides.
-            </p>
+            <p>Workout information will appear here.</p>
 
         </div>
 
