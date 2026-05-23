@@ -14,21 +14,37 @@
 
         <div class="body-container">
 
-            <!-- BODY IMAGE -->
-
             <img src="background.png" alt="Body Anatomy">
 
-            <!-- BLACK DOTS -->
+            <!-- DOTS -->
 
-            <div class="dot chest-dot"></div>
+            <button class="dot chest-dot" onclick="showPopup()"></button>
 
-            <div class="dot arm-dot"></div>
+            <button class="dot arm-dot" onclick="showPopup()"></button>
 
-            <div class="dot leg-dot"></div>
+            <button class="dot leg-dot" onclick="showPopup()"></button>
 
         </div>
 
     </section>
 
+    <!-- POPUP -->
+
+    <div class="popup" id="popup">
+
+        <div class="popup-box">
+
+            <span class="close-btn" onclick="closePopup()">×</span>
+
+            <h2>Exercise Guide</h2>
+
+            <p>Workout guides will appear here.</p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
-</html>body
+</html>
