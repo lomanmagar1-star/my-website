@@ -10,7 +10,7 @@ body{
     overflow:hidden;
 }
 
-/* PAGE */
+/* BODY PAGE */
 
 .body-page{
     width:100%;
@@ -19,9 +19,11 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+
+    background:black;
 }
 
-/* CONTAINER */
+/* BODY CONTAINER */
 
 .body-container{
     position:relative;
@@ -42,88 +44,53 @@ body{
 .dot{
     position:absolute;
 
-    width:22px;
-    height:22px;
-
-    border-radius:50%;
+    width:42px;
+    height:42px;
 
     background:black;
 
-    border:4px solid white;
+    border:5px solid white;
+
+    border-radius:50%;
 
     cursor:pointer;
 
     z-index:999;
 
     transition:0.3s;
+
+    box-shadow:0 0 15px rgba(255,255,255,0.5);
 }
 
 .dot:hover{
     transform:scale(1.15);
 
     background:red;
+
+    box-shadow:0 0 20px rgba(255,0,0,0.8);
 }
 
-/* LABEL */
-
-.dot span{
-    position:absolute;
-
-    left:30px;
-    top:-2px;
-
-    color:white;
-
-    font-size:13px;
-    font-weight:bold;
-
-    letter-spacing:1px;
-}
-
-/* FRONT BODY */
+/* DOT POSITIONS */
 
 /* CHEST */
+
 .chest-dot{
-    top:29%;
-    left:34%;
+    top:18%;
+    left:42%;
 }
 
-/* ARMS */
+/* ARM */
+
 .arm-dot{
-    top:41%;
-    left:25%;
-}
-
-/* ABS */
-.abs-dot{
-    top:47%;
+    top:35%;
     left:34%;
 }
 
-/* LEGS */
+/* LEG */
+
 .leg-dot{
-    top:73%;
-    left:34%;
-}
-
-/* BACK BODY */
-
-/* BACK */
-.back-dot{
-    top:30%;
-    left:67%;
-}
-
-/* GLUTES */
-.glute-dot{
-    top:56%;
-    left:69%;
-}
-
-/* CALVES */
-.calf-dot{
-    top:74%;
-    left:69%;
+    top:70%;
+    left:42%;
 }
 
 /* POPUP */
@@ -152,7 +119,7 @@ body{
 .popup-box{
     position:relative;
 
-    width:420px;
+    width:400px;
 
     background:#111;
 
@@ -162,7 +129,9 @@ body{
 
     text-align:center;
 
-    box-shadow:0 0 40px rgba(255,0,0,0.5);
+    box-shadow:0 0 30px rgba(255,0,0,0.4);
+
+    animation:fadeIn 0.3s ease;
 }
 
 /* TITLE */
@@ -170,9 +139,9 @@ body{
 .popup-box h2{
     color:red;
 
-    font-size:38px;
-
     margin-bottom:15px;
+
+    font-size:32px;
 }
 
 /* TEXT */
@@ -181,9 +150,11 @@ body{
     color:white;
 
     font-size:18px;
+
+    line-height:28px;
 }
 
-/* CLOSE */
+/* CLOSE BUTTON */
 
 .close-btn{
     position:absolute;
@@ -196,4 +167,25 @@ body{
     font-size:35px;
 
     cursor:pointer;
+
+    transition:0.3s;
+}
+
+.close-btn:hover{
+    color:red;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:scale(0.8);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
 }
