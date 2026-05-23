@@ -1,11 +1,11 @@
-function openBox(title){
+function showPopup(){
 
     document.getElementById("popup").style.display = "flex";
 
-    document.getElementById("popup-title").innerText = title;
 }
 
-function closeBox(){
+function closePopup(){
 
     document.getElementById("popup").style.display = "none";
+
 }
