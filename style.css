@@ -7,15 +7,14 @@
 body{
     font-family:Arial, sans-serif;
     background:black;
-    color:white;
-    overflow-x:hidden;
+    overflow:hidden;
 }
 
 /* BODY PAGE */
 
 .body-page{
     width:100%;
-    min-height:100vh;
+    height:100vh;
 
     display:flex;
     justify-content:center;
@@ -33,7 +32,7 @@ body{
     max-width:1400px;
 }
 
-/* IMAGE */
+/* BODY IMAGE */
 
 .body-container img{
     width:100%;
@@ -45,37 +44,48 @@ body{
 .dot{
     position:absolute;
 
-    width:24px;
-    height:24px;
+    width:32px;
+    height:32px;
 
-    background:red;
+    background:#ff0000;
 
     border-radius:50%;
 
+    border:3px solid white;
+
     cursor:pointer;
 
-    box-shadow:0 0 20px red;
+    z-index:999;
+
+    box-shadow:
+    0 0 15px red,
+    0 0 30px red,
+    0 0 45px red;
 
     animation:pulse 1.5s infinite;
-
-    z-index:10;
 }
 
 /* DOT POSITIONS */
 
+/* CHEST */
+
 .chest-dot{
     top:33%;
-    left:27%;
+    left:38%;
 }
+
+/* ARM */
 
 .arm-dot{
-    top:38%;
-    left:18%;
+    top:42%;
+    left:31%;
 }
 
+/* LEG */
+
 .leg-dot{
-    top:68%;
-    left:27%;
+    top:72%;
+    left:38%;
 }
 
 /* GUIDE BOX */
@@ -94,13 +104,15 @@ body{
 
     background:#111;
 
+    color:white;
+
     padding:30px;
 
     border-radius:20px;
 
-    z-index:999;
+    z-index:2000;
 
-    box-shadow:0 0 40px rgba(255,0,0,0.5);
+    box-shadow:0 0 40px rgba(255,0,0,0.6);
 
     animation:fadeIn 0.3s ease;
 }
@@ -159,7 +171,7 @@ body{
     }
 
     50%{
-        transform:scale(1.3);
+        transform:scale(1.25);
     }
 
     100%{
