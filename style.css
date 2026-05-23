@@ -239,13 +239,55 @@ body{
     background:black;
 }
 
-.body-page img{
+/* BODY CONTAINER */
+
+.body-container{
+    position:relative;
+
     width:100%;
     max-width:1600px;
+}
 
-    object-fit:cover;
+/* BODY IMAGE */
 
-    animation:fadeIn 1.5s ease;
+.body-container img{
+    width:100%;
+
+    display:block;
+}
+
+/* BLACK DOTS */
+
+.dot{
+    position:absolute;
+
+    width:35px;
+    height:35px;
+
+    background:black;
+
+    border:4px solid white;
+
+    border-radius:50%;
+
+    z-index:9999;
+}
+
+/* DOT POSITIONS */
+
+.chest-dot{
+    top:33%;
+    left:38%;
+}
+
+.arm-dot{
+    top:43%;
+    left:31%;
+}
+
+.leg-dot{
+    top:72%;
+    left:38%;
 }
 
 /* ANIMATIONS */
