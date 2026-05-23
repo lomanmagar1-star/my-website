@@ -27,7 +27,7 @@ body{
     position:relative;
 
     width:100%;
-    max-width:1300px;
+    max-width:1400px;
 }
 
 /* IMAGE */
@@ -37,7 +37,7 @@ body{
     display:block;
 }
 
-/* DOT */
+/* DOTS */
 
 .dot{
     position:absolute;
@@ -64,17 +64,17 @@ body{
     background:red;
 }
 
-/* TEXT */
+/* LABEL */
 
 .dot span{
     position:absolute;
 
-    left:28px;
-    top:-1px;
+    left:30px;
+    top:-2px;
 
     color:white;
 
-    font-size:12px;
+    font-size:13px;
     font-weight:bold;
 
     letter-spacing:1px;
@@ -84,25 +84,25 @@ body{
 
 /* CHEST */
 .chest-dot{
-    top:24%;
+    top:29%;
     left:34%;
 }
 
 /* ARMS */
 .arm-dot{
-    top:40%;
-    left:24%;
+    top:41%;
+    left:25%;
 }
 
 /* ABS */
 .abs-dot{
-    top:48%;
+    top:47%;
     left:34%;
 }
 
 /* LEGS */
 .leg-dot{
-    top:74%;
+    top:73%;
     left:34%;
 }
 
@@ -111,19 +111,19 @@ body{
 /* BACK */
 .back-dot{
     top:30%;
-    left:69%;
+    left:67%;
 }
 
 /* GLUTES */
 .glute-dot{
     top:56%;
-    left:71%;
+    left:69%;
 }
 
 /* CALVES */
 .calf-dot{
     top:74%;
-    left:71%;
+    left:69%;
 }
 
 /* POPUP */
