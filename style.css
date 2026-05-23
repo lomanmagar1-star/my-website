@@ -1,199 +1,160 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+/* HERO SECTION */
 
-body{
-    background:black;
-    font-family:Arial, sans-serif;
-    overflow:hidden;
-}
+.hero{
+    position:relative;
 
-/* PAGE */
-
-.body-page{
     width:100%;
     height:100vh;
+
+    background:url('background.jpg');
+    background-size:cover;
+    background-position:center;
 
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
-/* CONTAINER */
+/* OVERLAY */
 
-.body-container{
-    position:relative;
-
-    width:100%;
-    max-width:1300px;
-}
-
-/* IMAGE */
-
-.body-container img{
-    width:100%;
-    display:block;
-}
-
-/* DOT */
-
-.dot{
+.overlay{
     position:absolute;
 
-    width:22px;
-    height:22px;
+    width:100%;
+    height:100%;
 
-    border-radius:50%;
-
-    background:black;
-
-    border:4px solid white;
-
-    cursor:pointer;
-
-    z-index:999;
-
-    transition:0.3s;
+    background:rgba(0,0,0,0.6);
 }
 
-.dot:hover{
-    transform:scale(1.15);
+/* NAVBAR */
 
-    background:red;
-}
-
-/* TEXT */
-
-.dot span{
+.navbar{
     position:absolute;
-
-    left:28px;
-    top:-1px;
-
-    color:white;
-
-    font-size:12px;
-    font-weight:bold;
-
-    letter-spacing:1px;
-}
-
-/* FRONT BODY */
-
-/* CHEST */
-.chest-dot{
-    top:24%;
-    left:34%;
-}
-
-/* ARMS */
-.arm-dot{
-    top:40%;
-    left:24%;
-}
-
-/* ABS */
-.abs-dot{
-    top:48%;
-    left:34%;
-}
-
-/* LEGS */
-.leg-dot{
-    top:74%;
-    left:34%;
-}
-
-/* BACK BODY */
-
-/* BACK */
-.back-dot{
-    top:30%;
-    left:69%;
-}
-
-/* GLUTES */
-.glute-dot{
-    top:56%;
-    left:71%;
-}
-
-/* CALVES */
-.calf-dot{
-    top:74%;
-    left:71%;
-}
-
-/* POPUP */
-
-.popup{
-    position:fixed;
 
     top:0;
     left:0;
 
     width:100%;
-    height:100%;
 
-    background:rgba(0,0,0,0.7);
+    padding:25px 80px;
 
-    display:none;
-
-    justify-content:center;
+    display:flex;
+    justify-content:space-between;
     align-items:center;
 
-    z-index:10000;
+    z-index:10;
 }
 
-/* POPUP BOX */
+.navbar h2{
+    color:white;
+    font-size:28px;
+}
 
-.popup-box{
+.navbar ul{
+    display:flex;
+    gap:40px;
+
+    list-style:none;
+}
+
+.navbar ul li{
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.navbar ul li:hover{
+    color:red;
+}
+
+/* HERO CONTENT */
+
+.hero-content{
     position:relative;
 
-    width:420px;
-
-    background:#111;
-
-    padding:40px;
-
-    border-radius:20px;
+    z-index:10;
 
     text-align:center;
 
-    box-shadow:0 0 40px rgba(255,0,0,0.5);
+    color:white;
+
+    max-width:700px;
 }
 
-/* TITLE */
+.hero-content h1{
+    font-size:90px;
 
-.popup-box h2{
-    color:red;
+    line-height:90px;
 
-    font-size:38px;
-
-    margin-bottom:15px;
+    margin-bottom:20px;
 }
 
-/* TEXT */
+.hero-content p{
+    font-size:20px;
 
-.popup-box p{
+    line-height:32px;
+
+    margin-bottom:35px;
+}
+
+/* BUTTON */
+
+.hero-content button{
+    padding:18px 45px;
+
+    border:none;
+
+    background:red;
+
     color:white;
 
     font-size:18px;
-}
+    font-weight:bold;
 
-/* CLOSE */
-
-.close-btn{
-    position:absolute;
-
-    top:10px;
-    right:20px;
-
-    color:white;
-
-    font-size:35px;
+    border-radius:40px;
 
     cursor:pointer;
+
+    transition:0.3s;
+}
+
+.hero-content button:hover{
+    transform:scale(1.05);
+
+    background:white;
+    color:black;
+}
+
+/* STATS */
+
+.stats{
+    margin-top:60px;
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+
+    flex-wrap:wrap;
+}
+
+.stat-box{
+    background:rgba(255,255,255,0.1);
+
+    padding:25px 35px;
+
+    border-radius:15px;
+
+    backdrop-filter:blur(5px);
+}
+
+.stat-box h3{
+    font-size:35px;
+
+    color:red;
+
+    margin-bottom:8px;
+}
+
+.stat-box span{
+    color:white;
 }
