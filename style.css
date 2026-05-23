@@ -56,10 +56,12 @@ body{
     z-index:999;
 
     transition:0.3s;
+
+    transform:translate(-50%,-50%);
 }
 
 .dot:hover{
-    transform:scale(1.15);
+    transform:translate(-50%,-50%) scale(1.15);
 
     background:red;
 }
@@ -84,46 +86,46 @@ body{
 
 /* CHEST */
 .chest-dot{
-    top:24%;
-    left:34%;
+    top:18%;
+    left:26%;
 }
 
 /* ARMS */
 .arm-dot{
-    top:40%;
-    left:24%;
+    top:39%;
+    left:26%;
 }
 
 /* ABS */
 .abs-dot{
-    top:48%;
-    left:34%;
+    top:69%;
+    left:26%;
 }
 
 /* LEGS */
 .leg-dot{
-    top:74%;
-    left:34%;
+    top:84%;
+    left:26%;
 }
 
 /* BACK BODY */
 
 /* BACK */
 .back-dot{
-    top:30%;
-    left:69%;
+    top:18%;
+    left:73%;
 }
 
 /* GLUTES */
 .glute-dot{
-    top:56%;
-    left:71%;
+    top:59%;
+    left:73%;
 }
 
 /* CALVES */
 .calf-dot{
-    top:74%;
-    left:71%;
+    top:83%;
+    left:73%;
 }
 
 /* POPUP */
