@@ -10,13 +10,10 @@ body{
     color:white;
 }
 
-/* =========================
-HOME PAGE
-========================= */
+/* HOME PAGE */
 
 .hero{
     position:relative;
-
     width:100%;
     height:100vh;
 
@@ -26,14 +23,10 @@ HOME PAGE
     background-repeat:no-repeat;
 }
 
-/* OVERLAY */
-
 .overlay{
     position:absolute;
-
     width:100%;
     height:100%;
-
     background:rgba(0,0,0,0.7);
 }
 
@@ -62,18 +55,13 @@ HOME PAGE
 
 .navbar li{
     padding:12px 25px;
-
     border-radius:10px;
-
     cursor:pointer;
-
     transition:0.3s;
 }
 
 .navbar li:hover{
     background:red;
-
-    transform:scale(1.05);
 }
 
 /* HERO CONTENT */
@@ -88,14 +76,13 @@ HOME PAGE
 
     z-index:2;
 
-    width:100%;
-
     text-align:center;
+
+    width:100%;
 }
 
 .hero-content h1{
     font-size:110px;
-
     line-height:110px;
 
     margin-bottom:25px;
@@ -104,9 +91,9 @@ HOME PAGE
 .hero-content p{
     font-size:24px;
 
-    color:#dddddd;
-
     margin-bottom:40px;
+
+    color:#dddddd;
 }
 
 /* BUTTON */
@@ -131,8 +118,6 @@ HOME PAGE
 .hero-content button:hover{
     background:white;
     color:black;
-
-    transform:scale(1.05);
 }
 
 /* STATS */
@@ -162,9 +147,7 @@ HOME PAGE
     margin-bottom:10px;
 }
 
-/* =========================
-SECOND PAGE
-========================= */
+/* SECOND PAGE */
 
 .body-page{
     width:100%;
