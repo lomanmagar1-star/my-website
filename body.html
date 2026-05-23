@@ -12,9 +12,84 @@
 
     <section class="body-page">
 
-        <img src="background.png" alt="Body Anatomy">
+        <!-- BODY IMAGE -->
+
+        <div class="body-container">
+
+            <img src="background.png" alt="Body Anatomy">
+
+            <!-- RED DOTS -->
+
+            <div class="dot chest-dot" onclick="openGuide('chest-guide')"></div>
+
+            <div class="dot arm-dot" onclick="openGuide('arm-guide')"></div>
+
+            <div class="dot leg-dot" onclick="openGuide('leg-guide')"></div>
+
+        </div>
 
     </section>
+
+    <!-- POPUP BOXES -->
+
+    <!-- CHEST -->
+
+    <div class="guide-box" id="chest-guide">
+
+        <button class="close-btn" onclick="closeGuide('chest-guide')">
+            X
+        </button>
+
+        <h2>Chest Workout</h2>
+
+        <ul>
+            <li>Bench Press</li>
+            <li>Push Ups</li>
+            <li>Incline Dumbbell Press</li>
+            <li>Chest Fly</li>
+        </ul>
+
+    </div>
+
+    <!-- ARM -->
+
+    <div class="guide-box" id="arm-guide">
+
+        <button class="close-btn" onclick="closeGuide('arm-guide')">
+            X
+        </button>
+
+        <h2>Arm Workout</h2>
+
+        <ul>
+            <li>Bicep Curls</li>
+            <li>Hammer Curls</li>
+            <li>Tricep Pushdown</li>
+            <li>Diamond Push Ups</li>
+        </ul>
+
+    </div>
+
+    <!-- LEGS -->
+
+    <div class="guide-box" id="leg-guide">
+
+        <button class="close-btn" onclick="closeGuide('leg-guide')">
+            X
+        </button>
+
+        <h2>Leg Workout</h2>
+
+        <ul>
+            <li>Squats</li>
+            <li>Lunges</li>
+            <li>Leg Press</li>
+            <li>Calf Raises</li>
+        </ul>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
