@@ -5,19 +5,187 @@
 }
 
 body{
+    font-family:Arial, sans-serif;
     background:black;
-    overflow:hidden;
+    color:white;
+    overflow-x:hidden;
 }
 
-/* SECOND PAGE */
+/* =========================
+FIRST PAGE
+========================= */
+
+.hero{
+    position:relative;
+
+    width:100%;
+    height:100vh;
+
+    background-image:url("firstpage.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/* OVERLAY */
+
+.overlay{
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.7);
+}
+
+/* NAVBAR */
+
+.navbar{
+    position:relative;
+    z-index:2;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:30px 80px;
+}
+
+.navbar h2{
+    font-size:32px;
+    letter-spacing:2px;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+.navbar li{
+    padding:14px 30px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.navbar li:hover{
+    background:red;
+
+    transform:scale(1.05);
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%, -50%);
+
+    z-index:2;
+
+    text-align:center;
+
+    width:100%;
+    max-width:1000px;
+
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:110px;
+    line-height:110px;
+
+    margin-bottom:25px;
+}
+
+.hero-content p{
+    font-size:24px;
+
+    color:#dddddd;
+
+    margin-bottom:40px;
+}
+
+/* BUTTON */
+
+.hero-content button{
+    padding:18px 55px;
+
+    border:none;
+    border-radius:12px;
+
+    background:red;
+    color:white;
+
+    font-size:18px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.hero-content button:hover{
+    background:white;
+    color:black;
+
+    transform:scale(1.08);
+}
+
+/* STATS */
+
+.stats{
+    margin-top:70px;
+
+    display:flex;
+    justify-content:center;
+    gap:40px;
+
+    flex-wrap:wrap;
+}
+
+.stat-box{
+    background:rgba(255,255,255,0.08);
+
+    padding:25px 40px;
+
+    border-radius:15px;
+
+    transition:0.3s;
+}
+
+.stat-box:hover{
+    transform:translateY(-10px);
+}
+
+.stat-box h3{
+    color:red;
+
+    font-size:40px;
+
+    margin-bottom:10px;
+}
+
+/* =========================
+SECOND PAGE
+========================= */
 
 .body-page{
     width:100%;
-    height:100vh;
+    min-height:100vh;
 
     display:flex;
     justify-content:center;
     align-items:center;
+
+    background:black;
 }
 
 /* BODY CONTAINER */
@@ -29,10 +197,11 @@ body{
     max-width:1400px;
 }
 
-/* IMAGE */
+/* BODY IMAGE */
 
 .body-container img{
     width:100%;
+
     display:block;
 }
 
