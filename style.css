@@ -34,8 +34,6 @@ body{
     height:100%;
 
     background:rgba(0,0,0,0.72);
-
-    animation:fadeIn 2s ease;
 }
 
 /* NAVBAR */
@@ -44,75 +42,49 @@ body{
     position:relative;
     z-index:2;
 
-    width:100%;
-
     display:flex;
     justify-content:space-between;
     align-items:center;
 
     padding:30px 80px;
-
-    animation:slideDown 1s ease;
 }
 
 .navbar h2{
     font-size:32px;
-    letter-spacing:2px;
-
     color:white;
-
-    transition:0.3s;
-}
-
-.navbar h2:hover{
-    color:red;
-    transform:scale(1.05);
 }
 
 .navbar ul{
     display:flex;
     list-style:none;
-
     gap:40px;
 }
 
 .navbar li{
-    color:white;
-
     cursor:pointer;
     transition:0.3s;
 }
 
 .navbar li:hover{
     color:red;
-
-    transform:translateY(-3px);
 }
 
 /* HERO CONTENT */
 
 .hero-content{
     position:absolute;
-    z-index:2;
 
     top:50%;
     left:50%;
 
     transform:translate(-50%, -50%);
 
-    width:100%;
-    max-width:1000px;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    z-index:2;
 
     text-align:center;
 
-    padding:20px;
-
-    animation:fadeUp 1.5s ease;
+    width:100%;
+    max-width:1000px;
 }
 
 .hero-content h1{
@@ -120,16 +92,6 @@ body{
     line-height:110px;
 
     margin-bottom:25px;
-
-    color:white;
-
-    transition:0.4s;
-}
-
-.hero-content h1:hover{
-    transform:scale(1.02);
-
-    text-shadow:0 0 25px rgba(255,255,255,0.4);
 }
 
 .hero-content p{
@@ -137,15 +99,7 @@ body{
 
     color:#dddddd;
 
-    max-width:750px;
-
     margin-bottom:40px;
-
-    transition:0.3s;
-}
-
-.hero-content p:hover{
-    color:white;
 }
 
 /* BUTTON */
@@ -165,8 +119,6 @@ body{
     cursor:pointer;
 
     transition:0.3s;
-
-    box-shadow:0 0 25px rgba(255,0,0,0.5);
 }
 
 .hero-content button:hover{
@@ -174,8 +126,6 @@ body{
     color:black;
 
     transform:scale(1.08);
-
-    box-shadow:0 0 35px rgba(255,255,255,0.6);
 }
 
 /* STATS */
@@ -185,11 +135,8 @@ body{
 
     display:flex;
     justify-content:center;
-    align-items:center;
 
     gap:40px;
-
-    flex-wrap:wrap;
 }
 
 .stat-box{
@@ -198,32 +145,14 @@ body{
     padding:25px 40px;
 
     border-radius:15px;
-
-    backdrop-filter:blur(5px);
-
-    min-width:180px;
-
-    transition:0.4s;
-}
-
-.stat-box:hover{
-    transform:translateY(-10px) scale(1.05);
-
-    background:rgba(255,0,0,0.15);
-
-    box-shadow:0 0 25px rgba(255,0,0,0.4);
 }
 
 .stat-box h3{
+    color:red;
+
     font-size:40px;
 
     margin-bottom:10px;
-
-    color:red;
-}
-
-.stat-box span{
-    color:#cccccc;
 }
 
 /* SECOND PAGE */
@@ -239,59 +168,12 @@ body{
     background:black;
 }
 
-.body-page img{
-    width:100%;
-    max-width:1600px;
-
-    object-fit:cover;
-
-    animation:fadeIn 1.5s ease;
-}
-
-/* ANIMATIONS */
-
-@keyframes fadeUp{
-    from{
-        opacity:0;
-        transform:translate(-50%, -40%);
-    }
-
-    to{
-        opacity:1;
-        transform:translate(-50%, -50%);
-    }
-}
-
-@keyframes fadeIn{
-    from{
-        opacity:0;
-    }
-
-    to{
-        opacity:1;
-    }
-}
-
-@keyframes slideDown{
-    from{
-        opacity:0;
-        transform:translateY(-50px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}/* BODY CONTAINER */
-
 .body-container{
     position:relative;
 
     width:100%;
     max-width:1600px;
 }
-
-/* BODY IMAGE */
 
 .body-container img{
     width:100%;
@@ -313,17 +195,17 @@ body{
 
     border-radius:50%;
 
-    z-index:9999;
-
     cursor:pointer;
+
+    z-index:9999;
 
     transition:0.3s;
 }
 
 .dot:hover{
-    transform:scale(1.2);
-
     background:red;
+
+    transform:scale(1.2);
 }
 
 /* DOT POSITIONS */
@@ -341,62 +223,4 @@ body{
 .leg-dot{
     top:72%;
     left:38%;
-}
-
-/* POPUP */
-
-.popup{
-    position:fixed;
-
-    top:0;
-    left:0;
-
-    width:100%;
-    height:100%;
-
-    background:rgba(0,0,0,0.7);
-
-    display:none;
-
-    justify-content:center;
-    align-items:center;
-
-    z-index:10000;
-}
-
-.popup-box{
-    position:relative;
-
-    background:#111;
-
-    padding:40px;
-
-    border-radius:20px;
-
-    width:400px;
-
-    text-align:center;
-
-    box-shadow:0 0 30px rgba(255,0,0,0.3);
-}
-
-.popup-box h2{
-    color:red;
-
-    margin-bottom:15px;
-}
-
-.popup-box p{
-    color:white;
-}
-
-.close-btn{
-    position:absolute;
-
-    top:10px;
-    right:20px;
-
-    font-size:32px;
-
-    cursor:pointer;
 }
