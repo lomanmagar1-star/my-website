@@ -5,12 +5,11 @@
 }
 
 body{
-    font-family:Arial, sans-serif;
     background:black;
     overflow:hidden;
 }
 
-/* BODY PAGE */
+/* PAGE */
 
 .body-page{
     width:100%;
@@ -19,11 +18,9 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-
-    background:black;
 }
 
-/* BODY CONTAINER */
+/* CONTAINER */
 
 .body-container{
     position:relative;
@@ -32,162 +29,45 @@ body{
     max-width:1400px;
 }
 
-/* BODY IMAGE */
+/* IMAGE */
 
 .body-container img{
     width:100%;
     display:block;
 }
 
-/* RED DOTS */
+/* SIMPLE DOTS */
 
 .dot{
     position:absolute;
 
-    width:32px;
-    height:32px;
+    width:30px;
+    height:30px;
 
-    background:#ff0000;
-
-    border-radius:50%;
+    background:black;
 
     border:3px solid white;
+
+    border-radius:50%;
 
     cursor:pointer;
 
     z-index:999;
-
-    box-shadow:
-    0 0 15px red,
-    0 0 30px red,
-    0 0 45px red;
-
-    animation:pulse 1.5s infinite;
 }
 
 /* DOT POSITIONS */
-
-/* CHEST */
 
 .chest-dot{
     top:33%;
     left:38%;
 }
 
-/* ARM */
-
 .arm-dot{
-    top:42%;
+    top:43%;
     left:31%;
 }
-
-/* LEG */
 
 .leg-dot{
     top:72%;
     left:38%;
-}
-
-/* GUIDE BOX */
-
-.guide-box{
-    display:none;
-
-    position:fixed;
-
-    top:50%;
-    left:50%;
-
-    transform:translate(-50%, -50%);
-
-    width:350px;
-
-    background:#111;
-
-    color:white;
-
-    padding:30px;
-
-    border-radius:20px;
-
-    z-index:2000;
-
-    box-shadow:0 0 40px rgba(255,0,0,0.6);
-
-    animation:fadeIn 0.3s ease;
-}
-
-.guide-box h2{
-    color:red;
-
-    margin-bottom:20px;
-}
-
-.guide-box ul{
-    padding-left:20px;
-}
-
-.guide-box li{
-    margin-bottom:12px;
-}
-
-/* CLOSE BUTTON */
-
-.close-btn{
-    position:absolute;
-
-    top:15px;
-    right:15px;
-
-    width:35px;
-    height:35px;
-
-    border:none;
-    border-radius:50%;
-
-    background:red;
-    color:white;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
-    transition:0.3s;
-}
-
-.close-btn:hover{
-    background:white;
-    color:black;
-
-    transform:scale(1.1);
-}
-
-/* ANIMATIONS */
-
-@keyframes pulse{
-
-    0%{
-        transform:scale(1);
-    }
-
-    50%{
-        transform:scale(1.25);
-    }
-
-    100%{
-        transform:scale(1);
-    }
-
-}
-
-@keyframes fadeIn{
-
-    from{
-        opacity:0;
-    }
-
-    to{
-        opacity:1;
-    }
-
 }
