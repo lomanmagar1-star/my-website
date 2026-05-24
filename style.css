@@ -235,7 +235,28 @@ body{
     left:38%;
 }
 
-/* POPUP BACKGROUND */
+/* FRONT THIGH */
+
+.thigh-dot{
+    top:58%;
+    left:35%;
+}
+
+/* BACK */
+
+.back-dot{
+    top:38%;
+    left:67%;
+}
+
+/* BACK CALVES */
+
+.calf-dot{
+    top:76%;
+    left:67%;
+}
+
+/* POPUP */
 
 .popup{
     position:fixed;
