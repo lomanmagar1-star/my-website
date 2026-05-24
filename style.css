@@ -62,6 +62,7 @@ body{
 
 .navbar li{
     cursor:pointer;
+
     transition:0.3s;
 }
 
@@ -81,10 +82,10 @@ body{
 
     z-index:2;
 
-    text-align:center;
-
     width:100%;
     max-width:1000px;
+
+    text-align:center;
 }
 
 .hero-content h1{
@@ -168,6 +169,8 @@ body{
     background:black;
 }
 
+/* BODY CONTAINER */
+
 .body-container{
     position:relative;
 
@@ -175,10 +178,14 @@ body{
     max-width:1600px;
 }
 
+/* BODY IMAGE */
+
 .body-container img{
     width:100%;
 
     display:block;
+
+    pointer-events:none;
 }
 
 /* DOTS */
@@ -197,7 +204,7 @@ body{
 
     cursor:pointer;
 
-    z-index:9999;
+    z-index:99999;
 
     transition:0.3s;
 }
@@ -224,6 +231,7 @@ body{
     top:72%;
     left:38%;
 }
+
 /* POPUP */
 
 .popup{
@@ -242,7 +250,7 @@ body{
     justify-content:center;
     align-items:center;
 
-    z-index:10000;
+    z-index:100000;
 }
 
 /* POPUP BOX */
