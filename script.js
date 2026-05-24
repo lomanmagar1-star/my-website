@@ -1,4 +1,4 @@
-function showPopup(){
+function openPopup(){
 
     document.getElementById("popup").style.display = "flex";
 

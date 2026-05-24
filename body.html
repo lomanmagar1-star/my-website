@@ -20,15 +20,35 @@
 
             <!-- DOTS -->
 
-            <button class="dot chest-dot"></button>
+            <button class="dot chest-dot" onclick="openPopup()"></button>
 
-            <button class="dot arm-dot"></button>
+            <button class="dot arm-dot" onclick="openPopup()"></button>
 
-            <button class="dot leg-dot"></button>
+            <button class="dot leg-dot" onclick="openPopup()"></button>
 
         </div>
 
     </section>
+
+    <!-- SIMPLE POPUP -->
+
+    <div class="popup" id="popup">
+
+        <div class="popup-box">
+
+            <span class="close-btn" onclick="closePopup()">×</span>
+
+            <h2>Exercise Guide</h2>
+
+            <p>
+                Workout guide coming soon.
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
