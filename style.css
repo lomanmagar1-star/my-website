@@ -230,11 +230,6 @@ body{
     left:31%;
 }
 
-.leg-dot{
-    top:72%;
-    left:38%;
-}
-
 /* FRONT THIGH */
 
 .thigh-dot{
@@ -247,6 +242,13 @@ body{
 .back-dot{
     top:36%;
     left:65%;
+}
+
+/* BACK CALVES */
+
+.leg-dot{
+    top:76%;
+    left:66%;
 }
 
 /* POPUP */
