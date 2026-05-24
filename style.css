@@ -125,10 +125,6 @@ body{
 }
 
 .hero-content button:hover{
-    background:white;
-
-    color:black;
-
     transform:scale(1.08);
 }
 
