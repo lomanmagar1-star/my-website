@@ -262,7 +262,7 @@ body{
     width:100vw;
     height:100vh;
 
-    background:rgba(0,0,0,0.7);
+    background:rgba(0,0,0,0.5);
 
     display:none;
 
@@ -272,34 +272,40 @@ body{
     z-index:100000;
 }
 
-/* POPUP BOX */
+/* SIMPLE WHITE BOX */
 
 .popup-box{
     position:relative;
 
-    width:400px;
+    width:350px;
 
-    background:#111;
+    background:white;
 
-    padding:40px;
+    padding:35px;
 
-    border-radius:20px;
+    border-radius:15px;
 
     text-align:center;
-
-    box-shadow:0 0 30px rgba(255,0,0,0.3);
 }
 
-/* POPUP TEXT */
+/* TITLE */
 
 .popup-box h2{
-    color:red;
+    color:black;
 
-    margin-bottom:15px;
+    margin-bottom:20px;
+
+    font-size:32px;
 }
 
+/* TEXT */
+
 .popup-box p{
-    color:white;
+    color:black;
+
+    font-size:20px;
+
+    line-height:35px;
 }
 
 /* CLOSE BUTTON */
@@ -308,9 +314,11 @@ body{
     position:absolute;
 
     top:10px;
-    right:20px;
+    right:18px;
 
-    font-size:32px;
+    font-size:30px;
+
+    color:black;
 
     cursor:pointer;
 }
