@@ -1,6 +1,72 @@
-function openPopup(){
+function showGuide(bodyPart){
 
-    document.getElementById("popup").style.display = "flex";
+    const popup = document.getElementById("popup");
+
+    const title = document.getElementById("popup-title");
+
+    const text = document.getElementById("popup-text");
+
+    popup.style.display = "flex";
+
+    if(bodyPart === "chest"){
+
+        title.innerHTML = "Chest Exercises";
+
+        text.innerHTML =
+        "• Bench Press <br><br>" +
+        "• Push Ups <br><br>" +
+        "• Chest Fly <br><br>" +
+        "• Incline Dumbbell Press";
+
+    }
+
+    else if(bodyPart === "arm"){
+
+        title.innerHTML = "Arm Exercises";
+
+        text.innerHTML =
+        "• Bicep Curls <br><br>" +
+        "• Hammer Curls <br><br>" +
+        "• Tricep Dips <br><br>" +
+        "• Cable Pushdowns";
+
+    }
+
+    else if(bodyPart === "thigh"){
+
+        title.innerHTML = "Thigh Exercises";
+
+        text.innerHTML =
+        "• Squats <br><br>" +
+        "• Lunges <br><br>" +
+        "• Leg Press <br><br>" +
+        "• Bulgarian Split Squats";
+
+    }
+
+    else if(bodyPart === "back"){
+
+        title.innerHTML = "Back Exercises";
+
+        text.innerHTML =
+        "• Pull Ups <br><br>" +
+        "• Deadlifts <br><br>" +
+        "• Barbell Rows <br><br>" +
+        "• Lat Pulldowns";
+
+    }
+
+    else if(bodyPart === "calves"){
+
+        title.innerHTML = "Calves Exercises";
+
+        text.innerHTML =
+        "• Standing Calf Raises <br><br>" +
+        "• Seated Calf Raises <br><br>" +
+        "• Jump Rope <br><br>" +
+        "• Farmer Walk";
+
+    }
 
 }
 

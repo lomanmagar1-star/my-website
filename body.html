@@ -20,15 +20,15 @@
 
             <!-- DOTS -->
 
-            <button class="dot chest-dot" onclick="openPopup()"></button>
+            <button class="dot chest-dot" onclick="showGuide('chest')"></button>
 
-            <button class="dot arm-dot" onclick="openPopup()"></button>
+            <button class="dot arm-dot" onclick="showGuide('arm')"></button>
 
-            <button class="dot thigh-dot" onclick="openPopup()"></button>
+            <button class="dot thigh-dot" onclick="showGuide('thigh')"></button>
 
-            <button class="dot back-dot" onclick="openPopup()"></button>
+            <button class="dot back-dot" onclick="showGuide('back')"></button>
 
-            <button class="dot leg-dot" onclick="openPopup()"></button>
+            <button class="dot leg-dot" onclick="showGuide('calves')"></button>
 
         </div>
 
@@ -42,9 +42,9 @@
 
             <span class="close-btn" onclick="closePopup()">×</span>
 
-            <h2>Exercise Guide</h2>
+            <h2 id="popup-title">Exercise Guide</h2>
 
-            <p>
+            <p id="popup-text">
                 Workout guide coming soon.
             </p>
 
