@@ -222,7 +222,7 @@ body{
 
 .chest-dot{
     top:33%;
-    left:38%;
+    left:36%;
 }
 
 .arm-dot{
@@ -245,15 +245,8 @@ body{
 /* BACK */
 
 .back-dot{
-    top:38%;
-    left:67%;
-}
-
-/* BACK CALVES */
-
-.calf-dot{
-    top:76%;
-    left:67%;
+    top:36%;
+    left:65%;
 }
 
 /* POPUP */
