@@ -213,8 +213,6 @@ body{
 }
 
 .dot:hover{
-    background:red;
-
     transform:scale(1.2);
 }
 
