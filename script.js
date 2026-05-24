@@ -75,3 +75,53 @@ function closePopup(){
     document.getElementById("popup").style.display = "none";
 
 }
+
+/* NAVBAR POPUPS */
+
+function showInfo(type){
+
+    const popup = document.getElementById("info-popup");
+
+    const title = document.getElementById("info-title");
+
+    const text = document.getElementById("info-text");
+
+    popup.style.display = "flex";
+
+    if(type === "programs"){
+
+        title.innerHTML = "Programs";
+
+        text.innerHTML =
+        "Strength Training <br><br>" +
+        "Fat Loss <br><br>" +
+        "Muscle Building";
+
+    }
+
+    else if(type === "about"){
+
+        title.innerHTML = "About";
+
+        text.innerHTML =
+        "Fitness Guide helps people discover exercises for every muscle group.";
+
+    }
+
+    else if(type === "contact"){
+
+        title.innerHTML = "Contact";
+
+        text.innerHTML =
+        "Email: fitnessguide@gmail.com <br><br>" +
+        "Phone: +44 123456789";
+
+    }
+
+}
+
+function closeInfo(){
+
+    document.getElementById("info-popup").style.display = "none";
+
+}
