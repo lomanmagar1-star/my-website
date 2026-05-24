@@ -196,12 +196,12 @@ body{
 .dot{
     position:absolute;
 
-    width:35px;
-    height:35px;
+    width:26px;
+    height:26px;
 
     background:black;
 
-    border:4px solid white;
+    border:none;
 
     border-radius:50%;
 
