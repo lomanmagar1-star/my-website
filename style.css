@@ -390,4 +390,11 @@ body{
         height:20px;
     }
 
+}@media(max-width:900px){
+
+    .hero-content h1{
+        font-size:45px !important;
+        line-height:50px !important;
+    }
+
 }
