@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Body Guide</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- HOME BUTTON -->
+
+    <a href="index.html" class="home-btn">
+
+        HOME
+
+    </a>
+
+    <!-- BODY PAGE -->
 
     <section class="body-page">
 
@@ -20,15 +30,15 @@
 
             <!-- DOTS -->
 
-            <button class="dot chest-dot" onclick="showGuide('chest')"></button>
+            <div class="dot chest-dot" onclick="showGuide('chest')"></div>
 
-            <button class="dot arm-dot" onclick="showGuide('arm')"></button>
+            <div class="dot arm-dot" onclick="showGuide('arm')"></div>
 
-            <button class="dot thigh-dot" onclick="showGuide('thigh')"></button>
+            <div class="dot thigh-dot" onclick="showGuide('thigh')"></div>
 
-            <button class="dot back-dot" onclick="showGuide('back')"></button>
+            <div class="dot back-dot" onclick="showGuide('back')"></div>
 
-            <button class="dot leg-dot" onclick="showGuide('calves')"></button>
+            <div class="dot leg-dot" onclick="showGuide('calves')"></div>
 
         </div>
 
@@ -42,10 +52,12 @@
 
             <span class="close-btn" onclick="closePopup()">×</span>
 
-            <h2 id="popup-title">Exercise Guide</h2>
+            <h2 id="popup-title">
+                Exercise Guide
+            </h2>
 
             <p id="popup-text">
-                Workout guide coming soon.
+                Workout guide appears here.
             </p>
 
         </div>
