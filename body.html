@@ -12,7 +12,7 @@
 
     <!-- BACKGROUND MUSIC -->
 
-    <audio id="gym-audio" loop>
+    <audio autoplay loop>
 
         <source src="gym.mp3" type="audio/mpeg">
 
@@ -61,15 +61,11 @@
             <span class="close-btn" onclick="closePopup()">×</span>
 
             <h2 id="popup-title">
-
                 Exercise Guide
-
             </h2>
 
             <p id="popup-text">
-
                 Workout guide appears here.
-
             </p>
 
         </div>
@@ -77,20 +73,6 @@
     </div>
 
     <script src="script.js"></script>
-
-    <!-- MUSIC SCRIPT -->
-
-    <script>
-
-        const audio = document.getElementById("gym-audio");
-
-        window.addEventListener("click", () => {
-
-            audio.play();
-
-        }, { once:true });
-
-    </script>
 
 </body>
 </html>
