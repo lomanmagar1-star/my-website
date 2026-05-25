@@ -224,21 +224,15 @@ body{
     left:31%;
 }
 
-/* FRONT THIGH */
-
 .thigh-dot{
     top:58%;
     left:35%;
 }
 
-/* BACK */
-
 .back-dot{
     top:36%;
     left:65%;
 }
-
-/* BACK CALVES */
 
 .leg-dot{
     top:72%;
@@ -266,7 +260,7 @@ body{
     z-index:100000;
 }
 
-/* SIMPLE WHITE BOX */
+/* POPUP BOX */
 
 .popup-box{
     position:relative;
@@ -319,7 +313,9 @@ body{
 
 .close-btn:hover{
     color:red;
-}/* RESPONSIVE DESIGN */
+}
+
+/* RESPONSIVE DESIGN */
 
 @media(max-width:900px){
 
@@ -339,16 +335,26 @@ body{
         justify-content:center;
     }
 
-    .hero-content h1{
-        font-size:60px;
+    .hero-content{
+        top:52%;
+    }
 
-        line-height:65px;
+    .hero-content h1{
+        font-size:58px;
+
+        line-height:58px;
+
+        margin-bottom:20px;
     }
 
     .hero-content p{
         font-size:18px;
 
+        line-height:32px;
+
         padding:0 20px;
+
+        margin-bottom:35px;
     }
 
     .hero-content button{
@@ -361,6 +367,14 @@ body{
         flex-direction:column;
 
         align-items:center;
+
+        gap:25px;
+
+        margin-top:50px;
+    }
+
+    .stat-box{
+        width:250px;
     }
 
     .popup-box{
